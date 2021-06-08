@@ -1,0 +1,2802 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title -->
+  <title>Clone NTMH</title>
+
+  <!-- title icon -->
+  <link rel="icon" href="images/logoTD.svg" type="image/x-icon?">
+
+  <!-- fontawesome 4 icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- bootrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+  <!-- j query -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- my js -->
+  <!-- <script src="javascript-top.js"></script> -->
+
+  <!-- my css -->
+  <link rel="stylesheet" href="scss/NTMH.css">
+</head>
+<body>
+  <!-- sticker --> 
+  <span id="topPages"></span>  
+  <a href="#topPages">
+    <button id="btn-scroll" >
+      <img src="images/back-to-top.png" alt="" class="hv-shadow-circle" >
+    </button>
+  </a> 
+  <dl class="button-contact mb-0">
+    <dt class="mr-2 d-flex">
+      <a href="http://" target="_blank" class="my-auto d-block hv-shadow-circle">
+        <img src="images/messenger.png" alt="" class="icon-3-2">
+      </a>
+    </dt>
+    <dt class="mr-2 d-flex">
+      <a href="http://" target="_blank" class="my-auto d-block hv-shadow-circle">
+        <img src="images/zalo.png" alt="" class="icon-3-2">
+      </a>
+    </dt>    
+    <dt class="mr-2 ml-3 d-flex">
+      <a href="tel:+" id='phoneRing' class="my-auto d-block">
+        <img src="images/phoneRing.svg" alt="" class="icon-3-2">
+      </a>    
+    </dt>
+  </dl>
+  <!-- sticker end -->
+  <!-- navbar --> 
+  <nav class="navbar">
+    <header class="d-flex flex-wrap justify-content-between py-2 container-fluid border-bottom container">
+      <div class="d-flex justify-content-between flex-auto ">
+        <a href="index.html">
+          <img src='./images/logoTD.svg' alt='Logo' class='logo' title="trang chủ" loading='lazy' />
+        </a>
+        <button class='bg-theme rounded text-white navbar-btn my-auto' click-display-element='link-pages'> 
+          MENU
+          <span class="slicknav_icon ml-2">
+            <span class="slicknav_icon-bar"></span>
+            <span class="slicknav_icon-bar"></span>
+            <span class="slicknav_icon-bar"></span>
+          </span>
+        </button>
+        <form action="" class="my-auto">
+          <input type="text" placeholder="Nhập từ khóa...">
+          <a href="project-detail.html">
+            <i class="fa fa-search m-auto"></i>
+          </a>
+        </form>
+      </div>
+      <div class="links">
+        <dl class="gallery">
+          <dd>
+            <a href="gallery.html" title="Mẫu chung cư">
+              <figure>
+                <img src="./images/icon-chung-chu-nha-dep.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Chung cư đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>
+          <dd>
+            <a href="gallery.html" title="Mẫu nhà">
+              <figure>
+                <img src="./images/icon-nha-dep.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Mẫu nhà đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>
+          <dd>
+            <a href="sub_cate.html" title="Mẫu phòng ngủ">
+              <figure>
+                <img src="./images//icon-phong-ngu.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Phòng ngủ đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>
+          <dd>
+           <a href="sub_cate.html" title="Tủ bếp dẹp">
+              <figure>
+                <img src="./images/icon-phong-bep-dep.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Tủ bếp đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>                    
+          <dd>
+              <a href="gallery.html" title="Văn phòng đẹp">
+              <figure>
+                <img src="./images/icon-vanphong-dep.png" alt="" class='h4rem' loading='lazy'>
+                <figcaption class="">
+                  Văn phòng đẹp
+                </figcaption>
+              </figure>
+            </a>
+          </dd>                    
+        </dl>
+        <dl class="dang-ky">
+          <dd>
+            <button href="" class="dang-ky-btn hv-bg-theme" click-display-element='pop-box-dangkyTV'>
+              <p>
+                  Đăng ký tư vấn
+              </p>
+            </button>
+          </dd>
+          <dd>
+            <button href="" class="dang-ky-btn hv-bg-theme" click-display-element='pop-box-dangkyBG'>
+              <p>
+                  Đăng ký báo giá
+              </p>
+            </button>
+          </dd>
+        </dl>
+      </div>
+    </header>
+    <main class="container py-0 py-md-2">
+      <dl class='link-pages links pt-1 d-none'>
+        <dd class='link d-flex flex-wrap active'>
+          <a href="index.html" title="Trang chủ" class=' mr-2 cate'>
+            <b>
+              Trang chủ
+            </b>
+          </a>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="gallery -thiet-ke+thi-cong.html" title="Thiết kế nội thất" class=' mr-2 cate'>
+            <b>
+              Thiết kế nội thất
+            </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-noithat'>►</span>
+          <dl class="subCate subCate-noithat d-none ">
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thiết kế nội thất chung cư" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất chung cư
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất nhà phố" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất nhà phố
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất biệt thự" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất biệt thự
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất văn phòng" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất văn phòng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất phòng khách" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất phòng khách
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất phòng ngủ" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất phòng ngủ
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title="Thiết kế nội thất phòng bếp" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất phòng bếp
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất phòng trẻ em
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Bệnh Viện
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Trường Học
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Nhà Hàng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Khách sạn
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Văn Phòng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thiet-ke.html" title=" Thiết kế nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  (Mở thêm danh mục)
+                </b>
+              </a>
+            </dd>
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="gallery -thiet-ke+thi-cong.html" title="Thi công nội thất" class=' mr-2 cate'>
+            <b>
+              Thi công nội thất
+            </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-thicong'>►</span>
+          <dl class="subCate subCate-thicong d-none mb-2">
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất chung cư" class='2 mr-2'>
+                <b>
+                    Thi công nội thất chung cư
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất nhà phố" class='2 mr-2'>
+                <b>
+                  Thi công nội thất nhà phố
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất biệt thự" class='2 mr-2'>
+                <b>
+                  Thi công nội thất biệt thự
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất văn phòng" class='2 mr-2'>
+                <b>
+                  Thi công nội thất văn phòng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng khách" class='2 mr-2'>
+                <b>
+                  Thi công nội thất phòng khách
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng ngủ" class='2 mr-2'>
+                <b>
+                  Thi công nội thất phòng ngủ
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng bếp" class='2 mr-2'>
+                <b>
+                  Thi công nội thất phòng bếp
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thi công nội thất phòng trẻ em
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Bệnh Viện
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Trường Học
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Nhà Hàng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Khách sạn
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  Thiết kế nội thất Văn Phòng
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="landing-page-thi-cong.html" title="Thi công nội thất phòng trẻ em" class='2 mr-2'>
+                <b>
+                  (Mở tiếp nếu cần)
+                </b>
+              </a>
+            </dd>            
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="gallery.html" title="Dự án tiêu biểu" class=' mr-2 cate'>
+            <b>
+              Dự án tiêu biểu
+            </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-duan'>►</span>
+          <dl class="subCate subCate-duan d-none mb-2">
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án chung cư" class='2 mr-2'>
+                <b>
+                  Dự án chung cư
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title=" Dự án biệt thự" class='2 mr-2'>
+                <b>
+                                Dự án biệt thự
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title=" Dự án nhà phố" class='2 mr-2'>
+                <b>
+                                Dự án nhà phố
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án văn phòng" class='2 mr-2'>
+                <b>
+                                Dự án văn phòng
+                            </b>
+              </a>
+            </dd>
+
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án phòng trẻ em" class='2 mr-2'>
+                <b>
+                                Dự án phòng trẻ em
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án phòng khách" class='2 mr-2'>
+                <b>
+                                Dự án phòng khách
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án phòng ngủ" class='2 mr-2'>
+                <b>
+                                Dự án phòng ngủ
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án tỉnh" class='2 mr-2'>
+                <b>
+                                Dự án tỉnh
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án VINHOMES GRAND PARK" class='2 mr-2'>
+                <b>
+                                Dự án VINHOMES GRAND PARK
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án CELADON EMERALD" class='2 mr-2'>
+                <b>
+                                Dự án CELADON EMERALD
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Dự án CELADON EMERALD" class='2 mr-2'>
+                <b>
+                                Dự án của S-home
+                            </b>
+              </a>
+            </dd>
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="gallery-mau.html" title="Mẫu chung cư" class=' mr-2 cate'>
+            <b>
+              Mẫu chung cư
+            </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-mauchungcu'>►</span>
+          <dl class="subCate subCate-mauchungcu d-none pt-1 mb-2">
+            <dd class="">
+              <a href="sub_gallery.html" title="Chung cư 1 phòng ngủ" class='2 mr-2'>
+                <b>
+                                Chung cư 1 phòng ngủ
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Chung cư 2 phòng ngủ" class='2 mr-2'>
+                <b>
+                                Chung cư 2 phòng ngủ
+                            </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_gallery.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                                Chung cư 3 phòng ngủ
+                            </b>
+              </a>
+            </dd>
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="cate.html" title="Sản phẩm" class=' mr-2 cate'>
+            <b>
+              Sản phẩm
+          </b>
+          </a>
+          <span class="my-auto switch off" click-display-element='subCate-mauchungcu'>►</span>
+          <dl class="subCate subCate-mauchungcu d-none pt-1 mb-2">
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 1 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Danh mục bàn 
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 2 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Danh mục ghế 
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Danh mục tủ 
+                </b>
+              </a>
+            </dd>
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Nội thất công trình
+                </b>
+              </a>
+            </dd>            
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Nội thất bệnh viện
+                </b>
+              </a>
+            </dd>            
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  Sản phẩm khác
+                </b>
+              </a>
+            </dd>  
+            <dd class="">
+              <a href="sub_cate.html" title="Chung cư 3 phòng ngủ" class='2 mr-2'>
+                <b>
+                  (Mở thêm nếu cần)
+                </b>
+              </a>
+            </dd>             
+                      
+          </dl>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="news.html" title="Tin tức" class=' mr-2 cate'>
+            <b>
+              Tin tức
+            </b>
+          </a>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="https://www.youtube.com/" title="Video -channel" class=' mr-2 cate'>
+            <b>
+                        Video - channel
+                    </b>
+          </a>
+        </dd>
+        <dd class='link d-flex flex-wrap  '>
+          <a href="introl.html" title="Giới thiệu " class=' mr-2 cate'>
+            <b>
+                        Giới thiệu 
+                    </b>
+          </a>
+        </dd>
+      </dl>
+    </main>
+  </nav>  
+  <!-- navbar end -->
+  <!-- render form dang ky tu van -->
+  <div class="pop-box-dangkyTV d-none">
+    <div class="pop-box">
+      <div class="layer" click-display-element='pop-box-dangkyTV'></div>
+      <form action="" class="pop-box-content dang-ky">
+        <label class="p-4 mb-0">
+          <p class="size-24 text-center text-light mb-0">
+            <b>
+              Đăng ký nhận tư vấn
+            </b>
+          </p>
+          <button click-display-element='pop-box-dangkyTV' type="none" class="poiter">
+            <i class="fa fa-close size-24"></i>
+          </button>
+        </label>
+        <fieldset>
+          <p class="message">
+            Để lại lời nhắn cho chúng tôi
+          </p>
+          <input placeholder="Họ tên" type="text" name="name">
+          <input type="email" name="email" placeholder="Email">
+          <input type="tel" name="phoneNumber" placeholder="Số điện thoại">
+          <textarea name="content" rows='4' placeholder="Nội dung"></textarea>
+          <a class="btn">
+            <button class="bg-transparent border-0 poiter">
+              <b class="text-light">
+                Gửi ngay
+              </b>
+            </button>
+          </a>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div class="pop-box-dangkyBG d-none">
+    <div class="pop-box">
+      <div class="layer" click-display-element='pop-box-dangkyBG'></div>
+      <form action="" class="pop-box-content dang-ky">
+        <label class="p-4 mb-0">
+          <p class="size-24 text-center text-light">
+            <b>
+              Đăng ký nhận báo giá
+            </b>
+          </p>
+          <button click-display-element='pop-box-dangkyBG'>
+            <i class="fa fa-close size-24"></i>
+          </button>
+        </label>
+        <fieldset>
+          <p class="message">
+            Để lại lời nhắn cho chúng tôi
+          </p>
+          <input placeholder="Họ tên" type="text" name="name">
+          <input type="email" name="email" placeholder="Email">
+          <input type="tel" name="phoneNumber" placeholder="Số điện thoại">
+          <textarea name="content" rows='4' placeholder="Nội dung"></textarea>
+          <a class="btn">
+            <button class="bg-transparent border-0 poiter">
+              <b class="text-light">
+                Gửi ngay
+              </b>
+            </button>
+          </a>
+        </fieldset>
+      </form>
+    </div>
+  </div>  
+  <!-- render trang cate -->
+  <main class="landing-page">
+    <!-- breadcrumb -->
+    <section class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 bg-transparent px-0">
+          <li class="breadcrumb-item size-14 px-1"><a href="#" class="theme">Trang chủ</a></li>
+          <li class="breadcrumb-item size-14 px-1"><a href="#" class="theme">Tin tức</a></li>
+          <li class="breadcrumb-item active size-14 px-1" aria-current="page">Tin tức chi tiết</li>
+        </ol>
+      </nav>
+    </section>
+    <section class="container-fluid pb-md-5 pt-0 pt-md-3 bg-whitesmoke ">
+      <div class="container">
+        <main class="row mx-md-0 pt-md-4">
+          <aside class="col-md-8 px-3 shadow bg-white pb-5">
+            <header class="pt-3 mb-4">           
+              <p class="size-32-24 theme mb-1">
+                <b>                          
+                  Tin tức chi tiết
+                </b>
+              </p>
+              <p class="gray">
+                11:30:47 | 21-05-2021
+              </p>
+              <div class="bg-ghostwhite border p-3 mb-3" id="bookmark-list">              
+                <p class="text1 text-danger">
+                  <b>
+                    Danh mục
+                  </b>
+                </p>
+                <ul class="list-circle">            
+                  <li class="data">
+                    <a href="">
+                      Tổng hợp những mẫu thiết kế nội thất đẹp nhất theo diện tích
+                    </a>
+                  </li>
+                  <li class="data">
+                    <a href="">
+                      Bảng giá thiết kế nội thất chung cư
+                    </a>
+                  </li>
+                  <li class="data">
+                    <a href="">
+                      Lưu ý khi thiết kế nội thất cho căn hộ chung cư
+                    </a>
+                  </li>
+                  <li class="data">
+                    <a href="">
+                      Phong cách thiết kế nội thất căn hộ chung cư được ưa chuộng nhất
+                    </a>
+                  </li>
+                  <li class="data">
+                    <a href="">
+                      Quy trình thiết kế nội thất chung cư
+                    </a>
+                  </li>
+                  <li class="data">
+                    <a href="">
+                      Công ty thiết kế thi công nội thất chung cư uy tín - chuyên nghiệp
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p>Bạn đang tìm kiếm ý tưởng cho căn hộ chung cư của mình và một đơn vị thiết kế thi công nội thất đẹp với giá cả hợp lí? 
+                <br>
+                Nội thất Mạnh Hệ đã tổng hợp 30 mẫu thiết kế nội thất chung cư phong cách hiện đại đẹp nhất kèm báo giá thiết kế, thi công nội thất để gửi đến quý khách hàng, nhằm giúp các bạn có được sự lựa chọn tốt nhất cho mình. Hãy cùng theo dõi để tìm cho mình một phong cách phù hợp nhất cho tổ ấm gia đình mình nhé!
+              </p>
+             
+              <img src="images/bg-thiet-ke-noi-that.jpg" alt="" class="w-100 mb-2">
+              <p class="text-center">
+                <i>
+                  Thiết kế nội thất chung cư đa dạng phong cách
+                </i>
+              </p>
+            </header>
+            <hr>
+            <section class="pt-3">          
+              <header>
+                <p class="theme size-24-18 mb-4">
+                  <b>
+                    TỔNG HỢP 20 MẪU THIẾT KẾ NỘI THẤT ĐẸP NHẤT THEO DIỆN TÍCH
+                  </b>
+                </p>
+              </header>
+              <!-- danh muc mẫu theo diện tích -->
+              <ol class="upper-alpha px-md-4 px-3">                
+                  <!-- danh mục mẫu theo phòng -->
+                <li>  
+                  <p class="size-18-16">
+                    <b>
+                      NHỮNG MẪU THIẾT KẾ NỘI THẤT CĂN HỘ CHUNG CƯ MINI TỪ 35 - 60M2
+                    </b>
+                  </p>                            
+                  <ol class="pl-0">                  
+                    <li class="mb-5">
+                      <section>
+                        <p class="size-18-16">
+                          <u>
+                            Thiết kế nội thất chung cư mini 35m2 - 1 phòng ngủ
+                          </u> 
+                        </p>
+                        <ul class="list-disc theme2 mb-3">
+                          <li>
+                            <b>
+                              Tên công trình: 
+                            </b>
+                            Thiết kế nội thất căn hộ chung cư Kingdom 101                    
+                          </li>
+                          <li>
+                            <b>
+                              Hạng mục:
+                            </b>
+                            Phòng khách bếp, 1 phòng ngủ
+                          </li>
+                          <li>
+                            <b>
+                              Phong cách: 
+                            </b>
+                            Hiện đại, trẻ trung, tinh tế
+                          </li>
+                        </ul>                    
+                        <dl class="owl-carousel item-1 navMiddle">
+                          <dt class="item p-1" data-hash="nth-1">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau1.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-2">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau2.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-3">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau3.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-4">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau4.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-5">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau5.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-6">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau6.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-7">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau7.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-8">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau8.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-9">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau9.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-10">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau10.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-11">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau11.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-12">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau12.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-13">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau13.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-14">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau14.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-15">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau15.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-16">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau16.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-17">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau17.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-18">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau18.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-19">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau19.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-20">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau20.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                        </dl>
+                        <p class="text-center">
+                          <i>
+                            Mẫu thiết kế nội thất chung cư mini thông minh và hiện đại
+                          </i>
+                        </p>
+                        <dl class="owl-carousel item-auto no-nav">
+                          <dt class="item w-120">
+                                <a href='#nth-1'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau1.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-2'>
+                                <a href='#nth-2'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau2.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-3'>
+                                <a href='#nth-3'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau3.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-4'>
+                                <a href='#nth-4'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau4.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-5'>
+                                <a href='#nth-5'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau5.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-6'>
+                                <a href='#nth-6'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau6.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-7'>
+                                <a href='#nth-7'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau7.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-8'>
+                                <a href='#nth-8'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau8.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-9'>
+                                <a href='#nth-9'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau9.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-10'>
+                                <a href='#nth-10'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau10.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-11'>
+                                <a href='#nth-11'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau11.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-12'>
+                                <a href='#nth-12'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau12.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-13'>
+                                <a href='#nth-13'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau13.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-14'>
+                                <a href='#nth-14'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau14.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-15'>
+                                <a href='#nth-15'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau15.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-16'>
+                                <a href='#nth-16'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau16.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-17'>
+                                <a href='#nth-17'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau17.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-18'>
+                                <a href='#nth-18'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau18.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-19'>
+                                <a href='#nth-19'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau19.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-20'>
+                                <a href='#nth-20'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau20.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                        </dl>
+                        <div class="gallery-windown d-none" id="gallery-windown">
+                          <div class="layer" click-display-element='gallery-windown'></div>
+                          <div class="content">
+                            <nav class="d-flex justify-content-between  flex-wrap">
+                              <div class="Progress rounded-0">
+                                <div class="Bar"></div>
+                              </div>
+                              <p class="text-white owl-number-order-item-1 my-auto px-3">number</p>
+                              <aside class="d-flex flex-wrap justify-content-around m-auto m-md-0">
+                                <!-- <button class="border-0 p-3 bg-transparent my-auto hv-black9">
+                                        <img src="images/share-fill.svg" alt="" class="filter-white h15rem">
+                                      </button> -->
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 aspect switch">
+                                        <img src="images/aspect-ratio.svg" alt="" class="filter-white h15rem">
+                                      </button>
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 switch owl-item-1-autoPlay off" click-display-element='btn-gallery-zoom'>                                                         
+                                        <img src="images/play-circle.svg" alt="" class="filter-white h15rem btn-gallery-zoom d-block ">                                                                                
+                                        <img src="images/pause-circle.svg" alt="" class="filter-white h15rem btn-gallery-zoom d-none ">
+                                      </button>
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 download">                                
+                                        <img src="images/download.svg" alt="" class="filter-white h15rem">
+                                      </button>
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 zoom-in">
+                                        <img src="images/zoom-in.svg" alt="" class="filter-white h15rem">
+                                      </button>
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 zoom-out">
+                                        <img src="images/zoom-out.svg" alt="" class="filter-white h15rem">
+                                      </button>
+                                <button fullscreen="" class="bg-transparent border-0 my-auto p-2" title="Full screen" fullScreen click-display-element='fullscreen-icon'>
+                        <img src="images/arrows-fullscreen.svg" alt="" class="filter-white d-block fullscreen-icon">
+                        <img src="images/fullscreen-exit.svg" alt="" class="filter-white d-none fullscreen-icon">                    
+                      </button>
+                                <button class="btn-close m-auto" click-display-element='gallery-windown'>
+                                      </button>
+                              </aside>
+                            </nav>
+                            <main>
+                              <dl class="owl-carousel item-1 navMiddle m-auto" number-order='owl-number-order-item-1'>
+                                <dt class="item p-1" data-hash="nth-1">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau1.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-2">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau2.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-3">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau3.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-4">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau4.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-5">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau5.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-6">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau6.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-7">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau7.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-8">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau8.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-9">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau9.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-10">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau10.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-11">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau11.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-12">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau12.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-13">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau13.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-14">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau14.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-15">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau15.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-16">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau16.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-17">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau17.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-18">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau18.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-19">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau19.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-20">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau20.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                              </dl>
+                            </main>
+                            <footer>
+                              <dl class="owl-carousel item-auto no-nav mb-0 py-3">
+                                <dt class="item p-1">
+                                        <a href='#nth-1'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau1.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-2'>
+                                        <a href='#nth-2'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau2.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-3'>
+                                        <a href='#nth-3'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau3.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-4'>
+                                        <a href='#nth-4'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau4.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-5'>
+                                        <a href='#nth-5'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau5.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-6'>
+                                        <a href='#nth-6'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau6.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-7'>
+                                        <a href='#nth-7'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau7.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-8'>
+                                        <a href='#nth-8'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau8.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-9'>
+                                        <a href='#nth-9'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau9.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-10'>
+                                        <a href='#nth-10'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau10.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-11'>
+                                        <a href='#nth-11'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau11.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-12'>
+                                        <a href='#nth-12'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau12.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-13'>
+                                        <a href='#nth-13'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau13.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-14'>
+                                        <a href='#nth-14'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau14.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-15'>
+                                        <a href='#nth-15'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau15.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-16'>
+                                        <a href='#nth-16'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau16.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-17'>
+                                        <a href='#nth-17'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau17.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-18'>
+                                        <a href='#nth-18'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau18.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-19'>
+                                        <a href='#nth-19'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau19.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-20'>
+                                        <a href='#nth-20'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau20.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                              </dl>
+                            </footer>
+                          </div>
+                        </div>
+                        <div class="d-flex">
+                          <a href="project-detail.html" class="d-block m-auto no-decoration">
+                            <button class="btn-theme-bold  ">
+                              Xem thêm chi tiết >>
+                            </button>
+                          </a>
+                        </div>                    
+                        <hr class="my-4"> 
+                      </section>
+                    </li>
+                    <li class="mb-5">
+                      <section>
+                        <p class="size-18-16">
+                          <u>
+                            Thiết kế nội thất chung cư mini 35m2 - 1 phòng ngủ
+                          </u> 
+                        </p>
+                        <ul class="list-disc theme2 mb-3">
+                          <li>
+                            <b>
+                              Tên công trình: 
+                            </b>
+                            Thiết kế nội thất căn hộ chung cư Kingdom 101                    
+                          </li>
+                          <li>
+                            <b>
+                              Hạng mục:
+                            </b>
+                             Phòng khách bếp, 1 phòng ngủ
+                          </li>
+                          <li>
+                            <b>
+                              Phong cách: 
+                            </b>
+                            Hiện đại, trẻ trung, tinh tế
+                          </li>
+                        </ul>                    
+                        <dl class="owl-carousel item-1 navMiddle">
+                          <dt class="item p-1" data-hash="nth-1">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau1.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-2">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau2.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-3">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau3.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-4">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau4.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-5">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau5.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-6">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau6.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-7">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau7.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-8">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau8.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-9">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau9.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-10">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau10.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-11">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau11.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-12">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau12.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-13">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau13.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-14">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau14.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-15">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau15.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-16">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau16.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-17">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau17.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-18">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau18.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-19">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau19.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                          <dt class="item p-1" data-hash="nth-20">
+                                <figure class="rectangle-p mb-0">
+                                  <img src="images/ccmau20.jpg" alt="" click-display-element='gallery-windown'>
+                                </figure>
+                              </dt>
+                        </dl>
+                        <p class="text-center">
+                          <i>
+                            Mẫu thiết kế nội thất chung cư mini thông minh và hiện đại
+                          </i>
+                        </p>
+                        <dl class="owl-carousel item-auto no-nav">
+                          <dt class="item w-120">
+                                <a href='#nth-1'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau1.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-2'>
+                                <a href='#nth-2'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau2.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-3'>
+                                <a href='#nth-3'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau3.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-4'>
+                                <a href='#nth-4'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau4.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-5'>
+                                <a href='#nth-5'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau5.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-6'>
+                                <a href='#nth-6'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau6.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-7'>
+                                <a href='#nth-7'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau7.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-8'>
+                                <a href='#nth-8'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau8.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-9'>
+                                <a href='#nth-9'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau9.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-10'>
+                                <a href='#nth-10'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau10.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-11'>
+                                <a href='#nth-11'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau11.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-12'>
+                                <a href='#nth-12'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau12.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-13'>
+                                <a href='#nth-13'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau13.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-14'>
+                                <a href='#nth-14'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau14.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-15'>
+                                <a href='#nth-15'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau15.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-16'>
+                                <a href='#nth-16'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau16.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-17'>
+                                <a href='#nth-17'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau17.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-18'>
+                                <a href='#nth-18'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau18.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-19'>
+                                <a href='#nth-19'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau19.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                          <dt class="item w-120" href='#nth-20'>
+                                <a href='#nth-20'>
+                                  <figure class="rectangle rounded mb-0">
+                                    <img src="images/ccmau20.jpg" alt="">
+                                  </figure>
+                                </a>
+                              </dt>
+                        </dl>
+                        <div class="gallery-windown d-none" id="gallery-windown">
+                          <div class="layer" click-display-element='gallery-windown'></div>
+                          <div class="content">
+                            <nav class="d-flex justify-content-between  flex-wrap">
+                              <div class="Progress rounded-0">
+                                <div class="Bar"></div>
+                              </div>
+                              <p class="text-white owl-number-order-item-1 my-auto px-3">number</p>
+                              <aside class="d-flex flex-wrap justify-content-around m-auto m-md-0">
+                                <!-- <button class="border-0 p-3 bg-transparent my-auto hv-black9">
+                                        <img src="images/share-fill.svg" alt="" class="filter-white h15rem">
+                                      </button> -->
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 aspect switch">
+                                        <img src="images/aspect-ratio.svg" alt="" class="filter-white h15rem">
+                                      </button>
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 switch owl-item-1-autoPlay off" click-display-element='btn-gallery-zoom'>                                                         
+                                        <img src="images/play-circle.svg" alt="" class="filter-white h15rem btn-gallery-zoom d-block ">                                                                                
+                                        <img src="images/pause-circle.svg" alt="" class="filter-white h15rem btn-gallery-zoom d-none ">
+                                      </button>
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 download">                                
+                                        <img src="images/download.svg" alt="" class="filter-white h15rem">
+                                      </button>
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 zoom-in">
+                                        <img src="images/zoom-in.svg" alt="" class="filter-white h15rem">
+                                      </button>
+                                <button class="border-0 p-1 p-md-3 bg-transparent my-auto hv-black9 zoom-out">
+                                        <img src="images/zoom-out.svg" alt="" class="filter-white h15rem">
+                                      </button>
+                                <button fullscreen="" class="bg-transparent border-0 my-auto p-2" title="Full screen" fullScreen click-display-element='fullscreen-icon'>
+                        <img src="images/arrows-fullscreen.svg" alt="" class="filter-white d-block fullscreen-icon">
+                        <img src="images/fullscreen-exit.svg" alt="" class="filter-white d-none fullscreen-icon">                    
+                      </button>
+                                <button class="btn-close m-auto" click-display-element='gallery-windown'>
+                                      </button>
+                              </aside>
+                            </nav>
+                            <main>
+                              <dl class="owl-carousel item-1 navMiddle m-auto" number-order='owl-number-order-item-1'>
+                                <dt class="item p-1" data-hash="nth-1">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau1.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-2">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau2.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-3">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau3.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-4">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau4.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-5">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau5.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-6">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau6.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-7">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau7.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-8">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau8.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-9">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau9.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-10">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau10.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-11">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau11.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-12">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau12.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-13">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau13.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-14">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau14.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-15">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau15.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-16">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau16.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-17">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau17.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-18">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau18.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-19">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau19.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                                <dt class="item p-1" data-hash="nth-20">
+                                        <figure class="object-fit-contain mb-0">
+                                          <img src="images/ccmau20.jpg" alt="" class='w-100'>
+                                        </figure>
+                                      </dt>
+                              </dl>
+                            </main>
+                            <footer>
+                              <dl class="owl-carousel item-auto no-nav mb-0 py-3">
+                                <dt class="item p-1">
+                                        <a href='#nth-1'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau1.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-2'>
+                                        <a href='#nth-2'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau2.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-3'>
+                                        <a href='#nth-3'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau3.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-4'>
+                                        <a href='#nth-4'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau4.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-5'>
+                                        <a href='#nth-5'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau5.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-6'>
+                                        <a href='#nth-6'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau6.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-7'>
+                                        <a href='#nth-7'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau7.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-8'>
+                                        <a href='#nth-8'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau8.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-9'>
+                                        <a href='#nth-9'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau9.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-10'>
+                                        <a href='#nth-10'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau10.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-11'>
+                                        <a href='#nth-11'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau11.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-12'>
+                                        <a href='#nth-12'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau12.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-13'>
+                                        <a href='#nth-13'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau13.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-14'>
+                                        <a href='#nth-14'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau14.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-15'>
+                                        <a href='#nth-15'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau15.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-16'>
+                                        <a href='#nth-16'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau16.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-17'>
+                                        <a href='#nth-17'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau17.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-18'>
+                                        <a href='#nth-18'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau18.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-19'>
+                                        <a href='#nth-19'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau19.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                                <dt class="item p-1" href='#nth-20'>
+                                        <a href='#nth-20'>
+                                          <figure class="rectangle mb-0">
+                                            <img src="images/ccmau20.jpg" alt="">
+                                          </figure>
+                                        </a>
+                                      </dt>
+                              </dl>
+                            </footer>
+                          </div>
+                        </div>
+                        <div class="d-flex">
+                          <a href="project-detail.html" class="d-block m-auto no-decoration">
+                            <button class="btn-theme-bold  ">
+                              Xem thêm chi tiết >>
+                            </button>
+                          </a>
+                        </div>            
+                      </section>  
+                    </li>
+                  </ol>  
+                  <section class='py-4'>
+            <p class="markerIMG size-22-18">
+              <b>
+                Căn hộ tương tự
+            </b>
+            </p>
+            <dl class="owl-carousel item-4-2 no-dots navMiddle">
+              <dt class="item">
+                <a href="project-detail.html" class="no-decoration">
+                  <figure class="product-2">
+                    <picture>
+                      <img src="./images/no9.jpg" alt="" loading='lazy'>
+                    </picture>
+                    <figcaption>
+                      <p class="tilte-showroom size-16">
+                        <b>
+                          pHONG CÁCH HIỆN ĐẠI
+                        </b>
+                      </p>
+                    </figcaption>
+                  </figure>  
+                </a>
+              </dt>
+              <dt class="item">
+                <a href="project-detail.html" class="no-decoration">
+                  <figure class="product-2">
+                    <picture>
+                      <img src="./images/no19.jpg" alt="" loading='lazy'>
+                    </picture>
+                    <figcaption>
+                      <p class="tilte-showroom size-16 ">
+                        <b>
+                          PHONG CÁCH CỔ ĐIỂN
+                        </b>
+                      </p>
+                    </figcaption>
+                  </figure>  
+                </a>
+              </dt>
+              <dt class="item">
+                <a href="project-detail.html" class="no-decoration">
+                  <figure class="product-2">
+                    <picture>
+                      <img src="./images/no18.jpg" alt="" loading='lazy'>
+                    </picture>
+                    <figcaption>
+                      <p class="tilte-showroom size-16 ">
+                        <b>
+                          PHONG CÁCH TÂN CỔ ĐIỂN
+                        </b>
+                      </p>
+                    </figcaption>
+                  </figure>  
+                </a>
+              </dt>
+              <dt class="item">
+                <a href="project-detail.html" class="no-decoration">
+                  <figure class="product-2">
+                    <picture>
+                      <img src="./images/no17.jpg" alt="" loading='lazy'>
+                    </picture>
+                    <figcaption>
+                      <p class="tilte-showroom size-16 ">
+                        <b>
+                          PHONG CÁCH Á ĐÔNG
+                        </b>
+                      </p>
+                    </figcaption>
+                  </figure>  
+                </a>
+              </dt>
+              <dt class="item">
+                <a href="project-detail.html" class="no-decoration">
+                  <figure class="product-2">
+                    <picture>
+                      <img src="./images/no16.jpg" alt="" loading='lazy'>
+                    </picture>
+                    <figcaption>
+                      <p class="tilte-showroom size-16 ">
+                        <b>
+                          PHONG CÁCH ĐƠN GIẢN
+                        </b>
+                      </p>
+                    </figcaption>
+                  </figure>  
+                </a>
+              </dt>
+              <dt class="item">
+                <a href="project-detail.html" class="no-decoration">
+                  <figure class="product-2">
+                    <picture>
+                      <img src="./images/no15.jpg" alt="" loading='lazy'>
+                    </picture>
+                    <figcaption>
+                      <p class="tilte-showroom size-16 ">
+                        <b>
+                          PHONG CÁCH TRUYỀN THỐNG
+                        </b>
+                      </p>
+                    </figcaption>
+                  </figure>  
+                </a>
+              </dt>           
+            </dl>
+          </section>                        
+                  <hr class="my-4"> 
+                </li>                
+              </ol>    
+              <a href="gallery.html" class="d-block text-center">
+                <button class="btn btn-danger animation-shadow-danger">
+                  XEM THÊM MẪU 
+                </button>
+              </a>    
+            </section>        
+            <section class="pt-5">
+              <p class="theme size-24-18 mb-3">
+                <b>
+                  BẢNG GIÁ THIẾT KẾ NỘI THẤT CHUNG CƯ
+                </b>
+              </p>
+              <p class=" size-18-16">
+                <b>
+                  Giá thiết kế nội thất là bao nhiêu?
+                </b>
+              </p>
+              <p>- Song song với “chất lượng” bản vẽ thì đơn giá thiết kế là vấn đề hàng đầu mà bạn quan tâm.
+                <br>
+                - Chúng tôi đã tìm hiểu và thống kê được đơn giá thiết kế nội thất chung cư trên thị trường bình quân trong khoảng 250.000d đến 350.000đ/m2 tùy đơn vị. Tại Mạnh Hệ, chúng tôi áp dụng mức giá thấp nhất cho bạn như sau:
+              </p>
+              <table border="2" style="width: 100%; background-color: whitesmoke; border-color: #0b0b0a; margin-left: auto; margin-right: auto;">
+                <tbody>
+                <tr style="height: 48px;">
+                  <td colspan="3" class="text-light bg-theme text-center py-3">
+                    <p class="mb-1">
+                      <b>                    
+                        Bảng giá thiết kế nội thất chung cư 2021
+                      </b>
+                    </p>
+                    <p class="mb-0">
+                      Đơn giá (VNĐ/m2)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class=" py-2 text-center">
+                    <b>
+                      Phong cách Hiện đại
+                    </b>
+                  </td>
+                  <td class=" py-2 text-center">
+                    <b>
+                      Phong cách Tân cổ điển    
+                    </b>
+                  </td>
+                  <td class=" py-2 text-center">
+                    <b>
+                      Phong cách Cổ điển
+                    </b>
+                  </td>
+                </tr>
+                <tr>
+                  <td class=" py-2 text-center">
+                    200.000 VNĐ
+                  </td>
+                  <td class=" py-2 text-center">
+                    220.000 VNĐ
+                  </td>
+                  <td class=" py-2 text-center">
+                    250.000 VNĐ                  
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="p-3">
+                  <p style="text-align: left;"><span style="font-size: 12pt;"><strong> <span style="color: #000080;"><span style="text-decoration: underline;">Nội dung công việc</span>: </span></strong></span></p>
+                  <ol>
+                  <li style="text-align: left;"><span style="font-size: 12pt;">Tư vấn sơ bộ về các dạng vật liệu và các phong cách thiết kế</span></li>
+                  <li style="text-align: left;"><span style="font-size: 12pt;">Khảo sát hiện trạng thực tế</span></li>
+                  <li style="text-align: left;"><span style="font-size: 12pt;">Ký hợp đồng thiết kế nội thất</span></li>
+                  <li style="text-align: left;"><span style="font-size: 12pt;">Lên bản vẽ thiết kế 3D</span></li>
+                  <li style="text-align: left;"><span style="font-size: 12pt;">Bàn giao bản vẽ và dự toán sơ bộ thi công </span><span style="font-size: 12pt;"></span></li>
+                  </ol>
+                  <p style="text-align: left;"><span style="font-size: 10pt;"><em>* <span style="color: #800000;"><strong>MIỄN PHÍ</strong></span> thiết kế 100% khi thi công nội thất.</em></span></p>
+                  </td>
+                </tr>
+                </tbody>
+              </table>                        
+            </section>   
+            <section class="pt-5">
+              <p class="theme size-24-18 mb-3">
+                <b>
+                  Cách tính giá thiết kế nội thất.
+                </b>
+              </p>
+              <p>
+                - Sự thật nhiều bạn chưa biết cách tính phí thiết kế nên tôi cũng chia sẻ luôn.
+              </p>
+              <div class="bg-theme w-fit p-2 m-auto px-4">
+                <p class="text-light m-auto">
+                  PHÍ THIẾT KẾ = DIỆN TÍCH x ĐƠN GIÁ
+                </p>              
+              </div>
+              <p>
+                - Ví dụ:
+                <br>
+                Chúng tôi chỉ tính phí với những diện tích bạn cần thiết kế. Ví dụ như phòng khách, nội thất phòng ngủ, phòng bếp còn phòng tắm không cần thiết kế sẽ trừ ra.
+              </p>
+              <p>
+                <b>
+                  Chi phí cho thiết kế nội thất chung cư quá nhiều và bạn cần 1 ưu đãi hơn?
+                </b>
+              </p>
+              <div class="bg-theme w-fit p-2 m-auto px-4">
+                <p class="text-light m-auto">
+                  KHÔNG LO CHI PHÍ THIẾT KẾ  - THIẾT KẾ GIÁ 0 Đ
+                </p>              
+              </div>
+              <p class="mt-3">
+                Bạn sẽ được tặng gói thiết kế nội thất khi ký hợp đồng thi công nội thất tại Mạnh Hệ. Vì vậy hãy chọn cho mình một phương án tốt để tiết kiệm được chi phí nhé.
+              </p>
+              <a href="" class="d-flex p-2  bg-whitesmoke w-100 underline-theme no-decoration ">
+                <img src="images/icon-hand-o-right-blue.svg" alt="" class="h2rem mr-2">
+                <p class="my-auto">
+                  Xem chi tiết hơn báo giá thiết kế nội thất chung cư trọn gói 2021 >>
+                </p>
+              </a>
+            </section>      
+            <section class="pt-5">
+              <p class="theme size-24-18 mb-3">
+                <b>
+                  Lưu ý khi thiết kế nội thất chung cư
+                </b>
+              </p>
+              <p>
+                <b>
+                  Xác định phong cách thiết kế
+                </b>
+                <br>
+                Xác định phong cách thiết kế sẽ giúp bạn dễ dàng hơn trong việc lựa chọn và bố trí đồ nội thất cho ngôi nhà, tạo nên tính đồng điệu cho tổng thể không gian.
+              </p>
+              <img src="images/phong-cach-thiet-ke.jpg" alt="" class="w-100">
+              <p>
+                Có rất nhiều phong cách thiết kế nội thất khác nhau để bạn có thể lựa chọn như: phong cách hiện đại, phong cách tân cổ điển, phong cách tối giản, phong cách đương đại, phong cách Scandinavian, Eco…Tùy thuộc vào sở thích của bạn và các thành viên trong gia đình, tùy thuộc vào kiến trúc căn hộ mà bạn lựa chọn phong cách thiết kế nội thất sao cho phù hợp nhất.
+              </p>
+              <p>
+                <b>
+                  Phối màu sắc căn hộ chung cư hài hòa
+                </b>
+                <br>
+                Màu sắc của căn hộ được lựa chọn phụ thuộc vào sở thích của gia chủ, đồng thời cần có sự kết hợp tinh tế giữa các màu sắc để tạo ra một không gian hài hòa.
+              </p>
+              <img src="images/bg-phoi-mau-trung-cu.jpg" alt="" class="w-100">
+              <p>
+                Bên cạnh đó, việc bố trí hệ thống đèn hợp lí, khoa học sẽ tạo cho bạn cảm giác thư giãn thỏai mái, không khí thoáng đãng. Mặt khác, biết cách tận dụng nguồn ánh sáng tự nhiên bằng cách sử dụng những ô cửa kính lớn với rèm che đầy thẩm mỹ mang đến không gian mở, tràn ngập không khí tự nhiên cho căn hộ.
+              </p>   
+              <section class='bg-white '>
+                <p class="markerIMG size-18-16">
+                  <b>
+                    Tìm hiểu thêm về các phong cách được yêu thích nhất năm 2021:
+                </b>
+                </p>
+                <dl class="owl-carousel item-4-2 no-dots navMiddle">
+                  <dt class="item">
+                  <a href="" class="no-decoration">
+                    <figure class="product-2">
+                      <picture>
+                        <img src="./images/no47.jpg" alt="" loading='lazy'>
+                      </picture>
+                      <figcaption>
+                        <p class="tilte-showroom size-16">
+                          <b>
+                            THI CÔNG NỘI THẤT
+                          </b>
+                        </p>
+                      </figcaption>
+                    </figure>  
+                  </a>
+                </dt>
+                  <dt class="item">
+                  <a href="" class="no-decoration">
+                    <figure class="product-2">
+                      <picture>
+                        <img src="./images/no47.jpg" alt="" loading='lazy'>
+                      </picture>
+                      <figcaption>
+                        <p class="tilte-showroom size-16 ">
+                          <b>
+                            THI CÔNG NỘI THẤT
+                          </b>
+                        </p>
+                      </figcaption>
+                    </figure>  
+                  </a>
+                </dt>
+                  <dt class="item">
+                  <a href="" class="no-decoration">
+                    <figure class="product-2">
+                      <picture>
+                        <img src="./images/no47.jpg" alt="" loading='lazy'>
+                      </picture>
+                      <figcaption>
+                        <p class="tilte-showroom size-16 ">
+                          <b>
+                            THI CÔNG NỘI THẤT
+                          </b>
+                        </p>
+                      </figcaption>
+                    </figure>  
+                  </a>
+                </dt>
+                  <dt class="item">
+                  <a href="" class="no-decoration">
+                    <figure class="product-2">
+                      <picture>
+                        <img src="./images/no47.jpg" alt="" loading='lazy'>
+                      </picture>
+                      <figcaption>
+                        <p class="tilte-showroom size-16 ">
+                          <b>
+                            THI CÔNG NỘI THẤT
+                          </b>
+                        </p>
+                      </figcaption>
+                    </figure>  
+                  </a>
+                </dt>
+                  <dt class="item">
+                  <a href="" class="no-decoration">
+                    <figure class="product-2">
+                      <picture>
+                        <img src="./images/no47.jpg" alt="" loading='lazy'>
+                      </picture>
+                      <figcaption>
+                        <p class="tilte-showroom size-16 ">
+                          <b>
+                            THI CÔNG NỘI THẤT
+                          </b>
+                        </p>
+                      </figcaption>
+                    </figure>  
+                  </a>
+                </dt>
+                  <dt class="item">
+                  <a href="" class="no-decoration">
+                    <figure class="product-2">
+                      <picture>
+                        <img src="./images/no47.jpg" alt="" loading='lazy'>
+                      </picture>
+                      <figcaption>
+                        <p class="tilte-showroom size-16 ">
+                          <b>
+                            THI CÔNG NỘI THẤT
+                          </b>
+                        </p>
+                      </figcaption>
+                    </figure>  
+                  </a>
+                </dt>
+                  <dt class="item">
+                  <a href="" class="no-decoration">
+                    <figure class="product-2">
+                      <picture>
+                        <img src="./images/no47.jpg" alt="" loading='lazy'>
+                      </picture>
+                      <figcaption>
+                        <p class="tilte-showroom size-16 ">
+                          <b>
+                            THI CÔNG NỘI THẤT
+                          </b>
+                        </p>
+                      </figcaption>
+                    </figure>  
+                  </a>
+                </dt>
+                  <dt class="item">
+                  <a href="" class="no-decoration">
+                    <figure class="product-2">
+                      <picture>
+                        <img src="./images/no47.jpg" alt="" loading='lazy'>
+                      </picture>
+                      <figcaption>
+                        <p class="tilte-showroom size-16 ">
+                          <b>
+                            THI CÔNG NỘI THẤT
+                          </b>
+                        </p>
+                      </figcaption>
+                    </figure>  
+                  </a>
+                </dt>
+                </dl>
+              </section> 
+            </section>
+            <section class="pt-5">
+              <p class="theme size-24-18 mb-3">
+                <b>
+                  Lưu ý khi thiết kế nội thất chung cư
+                </b>
+              </p>
+              <img src="images/imgcate.jpg" alt="" class="w-100 py-4">
+              <ul>
+                <li>
+                  Bước 1: Chuyên viên tư vấn sẽ ghi nhận lại những hạng mục bạn cần thiết kế thi công nội thất và giới thiệu sơ bộ về quy trình làm việc.
+                </li>
+                <li>
+                  Bước 2: Chuyên gia thiết kế sẽ khảo sát hiện trạng thực tế và trao đổi chuyên sâu hơn về vât liệu, cách bố trí nội thất.
+                </li>
+                <li>
+                  Bước 3: Sau khi tư vấn và thống nhất ý tưởng, hai bên cùng ký hợp đồng thiết kế và đặt cọc phí để KTS lên bản vẽ. Phí thiết kế sẽ được hoàn lại khi thi công nội thất trọn gói.
+                </li>
+                <li>
+                  Bước 4: Bản vẽ 3D hoàn thành sẽ được gửi đến bạn để chỉnh sửa bổ sung từ 1-2 lần và bàn giao bản vẽ hoàn thiện cuối cùng.
+                </li>
+                <li>
+                  Bước 5: Sau khi gửi bản vẽ 3D hoàn chỉnh Mạnh Hệ sẽ tiếp tục tiến hành triển khai bản vẽ 2D chi tiết và gửi tới quý khách hàng.
+                </li>
+              </ul>
+              <img src="images/imgcate2.jpg" alt="" class="w-100 py-4">
+              <ul>
+                <li>
+                  Bản vẽ bố trí mặt bằng nội thất
+                </li>
+                <li>
+                  Bản vẽ phối cảnh 3D
+                </li>
+                <li>
+                  Bản vẽ chi tiết các sản phẩm
+                </li>
+                <li>
+                  Bản vẽ trần, tường, đèn, đồ trang trí (giấy dán tường, sàn gỗ, tranh treo tường,…)
+                </li>
+              </ul>
+              <img src="images/imgcate3.jpg" alt="" class="w-100 py-4">
+              <ul>
+                <li>
+                  - Bởi vì thị trường quá cạnh tranh                
+                </li>
+                <li>
+                  Kiểm soát được tất cả các chi phí đầu vào, đầu ra                
+                </li>
+                <li>
+                  Sở hữu quy trình làm việc khép kín từ thiết kế - sản xuất – thi công lắp đặt -> không qua trung gian nên không tốn phí hoa hồng
+                </li>
+                <li>
+                  Đội ngũ nhân viên chuyên nghiệp đảm bảo tiến độ công việc -> không tốn chi phí thuê ngoài
+                </li>
+              </ul>
+              <a href="" class="d-block text-center">
+                <button class="btn btn-danger animation-shadow-danger">
+                  LIÊN HỆ TƯ VẤN
+                </button>
+              </a>
+            </section>
+            <section class="pt-5 tac-gia">
+              <div class="danh-gia">
+                <p class="mr-2 my-auto">
+                Bạn ơi bài viết hữu ích với bạn chứ
+                </p>
+                <div class="star d-flex">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                </div>
+                <p class="vote mr-2 my-auto">
+                <span class="five-star">
+                5/
+                </span>
+                <span class="total">
+                5
+                </span>
+                (
+                <span class="numbervote">
+                9
+                </span>
+                <i>
+                vote
+                </i>
+                )
+                </p>
+                <p class="my-auto">
+                chia sẻ nội dung
+                <a href="" rel="nofollow" target="_blank" title="page">
+                <img alt="" class="h2rem mr-5" src="images/facebook.png">
+                </a>
+                </p>
+              </div>
+              <div class="d-flex flex-wrap pt-4">
+                <a class="color-black d-block" href="tac-gia.html">
+                  <figure class="square-94">
+                  <img alt="Huyền Vũ" class="square-94 rounded-circle mr-3" src="images/huyen-vu.jpg">
+                  </figure>
+                </a>
+                <p class="blogQuote pl-md-3">
+                Mẫu bàn trà sofa hiện đại sử dụng chất liệu kính cường lực hay đá trắng vân mây, đá đen tia chớp để phù hợp với từng không gian của căn phòng. Đường viền mặt kính đã được xử lý kỹ càng, không bị sứt mẻ hay nứt vỡ giúp người sử dụng an tâm trong quá trình vệ sinh bàn. Mặt bàn đặt trên khung INOX với các nút cao su hút chân không giữ cho mặt kính chắc chắn, không xô lệch trên khung tròn.
+                <a class="d-block text-right" href="tac-gia.html">
+                <b>Huyền Vũ</b>
+                </a>
+                </p>
+                </div>
+            </section>
+            <section class="bg-whitesmoke">
+              <form action="" class=" pt-5 px-md-5">
+                <p class="title mb-4">
+                  <b>
+                  Để lại lời nhắn cho chúng tôi
+                </b>
+                </p>
+                <fieldset class="row mx-0">
+                  <label for="" class="mb-2 col-md-6 mb-3">
+                  <input placeholder="Họ tên" type="text" name="name" class="w-100 border p-2">
+                </label>
+        
+                  <label for="" class="mb-2 col-md-6 mb-3">
+                  <input type="email" name="email" placeholder="Email" class="w-100 border p-2">
+                </label>
+        
+                  <label for="" class="mb-2 col-md-6 mb-3">
+                  <input type="tel" name="phoneNumber" placeholder="Số điện thoại" class="w-100 border p-2">                    
+                </label>
+        
+                  <label for="" class="mb-2 col-md-6 mb-3">
+                  <select name="city_id" id="city_id" class="bg-white border p-2 w-100 gray">        
+                    <option value="">-- Tỉnh thành --</option>                      
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Hà Giang</option>
+                    <option value="4">Cao Bằng</option>
+                    <option value="6">Bắc Kạn</option>
+                    <option value="8">Tuyên Quang</option>
+                    <option value="10">Lào Cai</option>
+                    <option value="11">Điện Biên</option>
+                    <option value="12">Lai Châu</option>
+                    <option value="14">Sơn La</option>
+                    <option value="15">Yên Bái</option>
+                    <option value="17">Hòa Bình</option>
+                    <option value="19">Thái Nguyên</option>
+                    <option value="20">Lạng Sơn</option>
+                    <option value="22">Quảng Ninh</option>
+                    <option value="24">Bắc Giang</option>
+                    <option value="25">Phú Thọ</option>
+                    <option value="26">Vĩnh Phúc</option>
+                    <option value="27">Bắc Ninh</option>
+                    <option value="30">Hải Dương</option>
+                    <option value="31">Hải Phòng</option>
+                    <option value="33">Hưng Yên</option>
+                    <option value="34">Thái Bình</option>
+                    <option value="35">Hà Nam</option>
+                    <option value="36">Nam Định</option>
+                    <option value="37">Ninh Bình</option>
+                    <option value="38">Thanh Hóa</option>
+                    <option value="40">Nghệ An</option>
+                    <option value="42">Hà Tĩnh</option>
+                    <option value="44">Quảng Bình</option>
+                    <option value="45">Quảng Trị</option>
+                    <option value="46">Thừa Thiên Huế</option>
+                    <option value="48">Đà Nẵng</option>
+                    <option value="49">Quảng Nam</option>
+                    <option value="51">Quảng Ngãi</option>
+                    <option value="52">Bình Định</option>
+                    <option value="54">Phú Yên</option>
+                    <option value="56">Khánh Hòa</option>
+                    <option value="58">Ninh Thuận</option>
+                    <option value="60">Bình Thuận</option>
+                    <option value="62">Kon Tum</option>
+                    <option value="64">Gia Lai</option>
+                    <option value="66">Đắk Lắk</option>
+                    <option value="67">Đắk Nông</option>
+                    <option value="68">Lâm Đồng</option>
+                    <option value="70">Bình Phước</option>
+                    <option value="72">Tây Ninh</option>
+                    <option value="74">Bình Dương</option>
+                    <option value="75">Đồng Nai</option>
+                    <option value="77">Bà Rịa - Vũng Tàu</option>
+                    <option value="79">Hồ Chí Minh</option>
+                    <option value="80">Long An</option>
+                    <option value="82">Tiền Giang</option>
+                    <option value="83">Bến Tre</option>
+                    <option value="84">Trà Vinh</option>
+                    <option value="86">Vĩnh Long</option>
+                    <option value="87">Đồng Tháp</option>
+                    <option value="89">An Giang</option>
+                    <option value="91">Kiên Giang</option>
+                    <option value="92">Cần Thơ</option>
+                    <option value="93">Hậu Giang</option>
+                    <option value="94">Sóc Trăng</option>
+                    <option value="95">Bạc Liêu</option>
+                    <option value="96">Cà Mau</option>
+                  </select>                    
+                </label>
+                  <label for="" class="col-12">
+                  <textarea name="content" rows='4' placeholder="Nội dung" class="bg-white border w-100 p-2"></textarea>
+                </label>
+                </fieldset>
+                <div class="d-flex m-4 pb-4">
+                  <a href="" class="d-block m-auto no-decoration">
+                    <button class="btn-theme-bold  size-22-18">
+                      GỬI 
+                    </button>
+                  </a>
+                </div>
+              </form> 
+            </section>
+          </aside>
+          <aside class="col-md-4 pl-md-4 pr-md-0 px-0 d-none d-md-block">
+            <section class="shadow bg-white">
+              <form action="" class="pb-4 text-center">
+                <img src="images/form-bao-gia-2.png" alt="" class="w-100 ">
+                <fieldset class="p-3">
+                  <input placeholder="Họ tên" type="text" name="name" class="bg-white border w-100 p-2 mb-2">
+                  <input type="email" name="email" placeholder="Email" class="bg-white border w-100 p-2 mb-2">
+                  <input type="tel" name="phoneNumber" placeholder="Số điện thoại" class="bg-white border w-100 p-2 mb-2">
+                  <select name="city_id" id="city_id" class="bg-white border w-100 p-2 mb-2 gray">
+                        <option value="">-- Tỉnh thành --</option>                      
+                        <option value="1">Hà Nội</option>
+                        <option value="2">Hà Giang</option>
+                        <option value="4">Cao Bằng</option>
+                        <option value="6">Bắc Kạn</option>
+                        <option value="8">Tuyên Quang</option>
+                        <option value="10">Lào Cai</option>
+                        <option value="11">Điện Biên</option>
+                        <option value="12">Lai Châu</option>
+                        <option value="14">Sơn La</option>
+                        <option value="15">Yên Bái</option>
+                        <option value="17">Hòa Bình</option>
+                        <option value="19">Thái Nguyên</option>
+                        <option value="20">Lạng Sơn</option>
+                        <option value="22">Quảng Ninh</option>
+                        <option value="24">Bắc Giang</option>
+                        <option value="25">Phú Thọ</option>
+                        <option value="26">Vĩnh Phúc</option>
+                        <option value="27">Bắc Ninh</option>
+                        <option value="30">Hải Dương</option>
+                        <option value="31">Hải Phòng</option>
+                        <option value="33">Hưng Yên</option>
+                        <option value="34">Thái Bình</option>
+                        <option value="35">Hà Nam</option>
+                        <option value="36">Nam Định</option>
+                        <option value="37">Ninh Bình</option>
+                        <option value="38">Thanh Hóa</option>
+                        <option value="40">Nghệ An</option>
+                        <option value="42">Hà Tĩnh</option>
+                        <option value="44">Quảng Bình</option>
+                        <option value="45">Quảng Trị</option>
+                        <option value="46">Thừa Thiên Huế</option>
+                        <option value="48">Đà Nẵng</option>
+                        <option value="49">Quảng Nam</option>
+                        <option value="51">Quảng Ngãi</option>
+                        <option value="52">Bình Định</option>
+                        <option value="54">Phú Yên</option>
+                        <option value="56">Khánh Hòa</option>
+                        <option value="58">Ninh Thuận</option>
+                        <option value="60">Bình Thuận</option>
+                        <option value="62">Kon Tum</option>
+                        <option value="64">Gia Lai</option>
+                        <option value="66">Đắk Lắk</option>
+                        <option value="67">Đắk Nông</option>
+                        <option value="68">Lâm Đồng</option>
+                        <option value="70">Bình Phước</option>
+                        <option value="72">Tây Ninh</option>
+                        <option value="74">Bình Dương</option>
+                        <option value="75">Đồng Nai</option>
+                        <option value="77">Bà Rịa - Vũng Tàu</option>
+                        <option value="79">Hồ Chí Minh</option>
+                        <option value="80">Long An</option>
+                        <option value="82">Tiền Giang</option>
+                        <option value="83">Bến Tre</option>
+                        <option value="84">Trà Vinh</option>
+                        <option value="86">Vĩnh Long</option>
+                        <option value="87">Đồng Tháp</option>
+                        <option value="89">An Giang</option>
+                        <option value="91">Kiên Giang</option>
+                        <option value="92">Cần Thơ</option>
+                        <option value="93">Hậu Giang</option>
+                        <option value="94">Sóc Trăng</option>
+                        <option value="95">Bạc Liêu</option>
+                        <option value="96">Cà Mau</option>
+                      </select>
+                  <textarea name="content" rows='4' placeholder="Nội dung" class="bg-white border w-100 p-2"></textarea>
+                </fieldset>
+                <div class="d-flex">
+                  <a href="" class="d-block m-auto no-decoration">
+                    <button class="btn-theme-bold  ">
+                            GỬI LẠI CHO TÔI
+                          </button>
+                  </a>
+                </div>
+              </form>
+              <hr>
+            </section>
+            <section class="p-3 sticky-sliderbar shadow bg-white">
+              <p class="theme size-18-16 mb-4">
+                <b>
+                        Công Trình Mới Thực Hiện
+                      </b>
+              </p>
+              <dl>
+                <dt>
+                        <a href="project-detail.html" class="no-decoration" title='Diamond Lotus Riverside - 92m2 - 3PN'>
+                          <blockquote class="row mx-0 border p-2 hv-zoom bg-ghostwhite">                      
+                            <aside class="col-4 px-0">
+                              <figure class="square-p mb-0">
+                                <img src="images/no16.jpg" alt="">                        
+                              </figure>
+                            </aside>
+                            <aside class="col-8 pr-0">                        
+                              <p class="theme line-2-ellipsis mb-0">
+                                <u>
+                                  <b>
+                                    Emerald Celadon - 75m2 - 2 PN
+                                  </b>
+                                </u>
+                              </p>                           
+                              <p class="line-2-ellipsis mb-0 text-dark">
+                                Mẫu thiết kế nội thất biệt thự ở Đà Lạt, Mẫu thiết kế nội thất biệt thự ở Đà Lạt, với 3 phòng ngủ, đư…, 
+                              </p>
+                            </aside>
+                          </blockquote>
+                        </a>
+                      </dt>
+                <dt>
+                        <a href="project-detail.html" class="no-decoration" title='Diamond Lotus Riverside - 92m2 - 3PN'>
+                          <blockquote class="row mx-0 border p-2 hv-zoom bg-ghostwhite">                      
+                            <aside class="col-4 px-0">
+                              <figure class="square-p mb-0">
+                                <img src="images/no18.jpg" alt="">                        
+                              </figure>
+                            </aside>
+                            <aside class="col-8 pr-0">                        
+                              <p class="theme line-2-ellipsis mb-0">
+                                <u>
+                                  <b>
+                                    Emerald Celadon - 75m2 - 2 PN
+                                  </b>
+                                </u>
+                              </p>                           
+                              <p class="line-2-ellipsis mb-0 text-dark">
+                                Mẫu thiết kế nội thất biệt thự ở Đà Lạt, Mẫu thiết kế nội thất biệt thự ở Đà Lạt, với 3 phòng ngủ, đư…, 
+                              </p>
+                            </aside>
+                          </blockquote>
+                        </a>
+                      </dt>
+                <dt>
+                        <a href="project-detail.html" class="no-decoration" title='Diamond Lotus Riverside - 92m2 - 3PN'>
+                          <blockquote class="row mx-0 border p-2 hv-zoom bg-ghostwhite">                      
+                            <aside class="col-4 px-0">
+                              <figure class="square-p mb-0">
+                                <img src="images/no20.jpg" alt="">                        
+                              </figure>
+                            </aside>
+                            <aside class="col-8 pr-0">                        
+                              <p class="theme line-2-ellipsis mb-0">
+                                <u>
+                                  <b>
+                                    Emerald Celadon - 75m2 - 2 PN
+                                  </b>
+                                </u>
+                              </p>                           
+                              <p class="line-2-ellipsis mb-0 text-dark">
+                                Mẫu thiết kế nội thất biệt thự ở Đà Lạt, Mẫu thiết kế nội thất biệt thự ở Đà Lạt, với 3 phòng ngủ, đư…, 
+                              </p>
+                            </aside>
+                          </blockquote>
+                        </a>
+                      </dt>
+              </dl>
+            </section>
+          </aside>
+        </main>
+      </section>    
+      <section class="bg-ghostwhite  shadow py-5  px-3">
+        <p class="title mb-4 " animationOnScroll='flyup'>
+          <b>
+            BÁO CHÍ NÓI VỀ CHÚNG TÔI
+          </b>       
+        </p>
+        <dl class="owl-carousel item-auto-2 dot-middle no-nav" animationOnScroll='flyup'>
+          <dt class="item py-3">
+            <a href="">
+              <img src="./images/logobaochi1.jpg" alt="" class="h8-4rem hv-zoom" loading="lazy">            
+            </a>
+          </dt> 
+          <dt class="item py-3">
+            <a href="">
+              <img src="./images/logobaochi2.jpg" alt="" class="h8-4rem hv-zoom" loading="lazy">            
+            </a>
+          </dt>   
+          <dt class="item py-3">
+            <a href="">
+              <img src="./images/logobaochi3.jpg" alt="" class="h8-4rem hv-zoom" loading="lazy">            
+            </a>
+          </dt> 
+          <dt class="item py-3">
+            <a href="">
+              <img src="./images/logobaochi4.jpg" alt="" class="h8-4rem hv-zoom" loading="lazy">            
+            </a>
+          </dt> 
+          <dt class="item py-3">
+            <a href="">
+              <img src="./images/logobaochi5.jpg" alt="" class="h8-4rem hv-zoom" loading="lazy">            
+            </a>
+          </dt> 
+          <dt class="item py-3">
+            <a href="">
+              <img src="./images/logobaochi6.jpg" alt="" class="h8-4rem hv-zoom" loading="lazy">            
+            </a>
+          </dt> 
+        </dl> 
+      </section>                 
+      </div>  
+  </main>
+  <footer class="container-fluid pt-5 px-0">
+    <div class="container">
+      <div class="row mx-0">
+        <aside class="col-md-4 ">
+          <div class="text-center mb-5">
+            <img src="images/logoTD.svg" alt="" class="h12rem">
+          </div>
+        </aside>
+        <aside class="col-md-8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15674.401779951488!2d106.6440178!3d10.8418579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8422fa3ef8eeebd3!2zTuG7mWkgdGjhuqV0IFRo4bqnbiDEkOG7k25n!5e0!3m2!1sen!2s!4v1623028893716!5m2!1sen!2s" width="600" height="200" class='w-100 mb-3' style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </aside>
+      </div>
+      <main class="row px-md-5 mx-0">
+        <aside class="col-md-4 text-light">     
+          <p class="size-18-16">
+            <b>
+              THÔNG TIN CÔNG TY
+            </b>
+          </p>
+          <p>
+            CÔNG TY TNHH MTV SX - TM THẦN ĐỒNG
+          </p>          
+          <p>
+            <img src="images/icon-location.svg" alt="" class="mr-2">
+            1100 Quang Trung, Phường 8, Quận Gò Vấp, Tp. HCM
+          </p>
+          <p>
+            <img src="images/icon-phone.svg" alt="" class="mr-2">
+            <a href="tel:+028 6271 4820">
+              028 6271 4820 
+            </a>
+            -
+            <a href="tel:+0938 228 086">
+              0938 228 086
+            </a>
+          </p>
+          <a href="mailto:">
+            <img src="images/icon-mail.svg" alt="" class="mr-2">
+            noithatthandong@gmail.com
+          </a>
+          <img src="images/thong-bao-bo-cong-thuon.png" alt="" class="d-block h8rem mt-2">
+        </aside>
+        <aside class="col-md-4 text-light">
+          <dl>
+            <dt class='size-18-16 mb-3'>
+              <b>HỖ TRỢ KHÁCH HÀNG</b>
+            </dt>
+            <dd class="underline-dashed py-2">        
+              <a href="">
+                Quy Trình Làm Việc
+              </a>
+            </dd>
+            <dd class="underline-dashed py-2">
+              <a href="">
+                Bảo Hành - Đổi Trả
+              </a>
+            </dd>
+            <dd class="underline-dashed py-2">            
+              <a href="">
+                Hình Thức Thanh Toán
+              </a>
+            </dd>
+            <dd class="underline-dashed py-2">          
+              <a href="">
+                Vận Chuyển - Giao Nhận
+              </a>  
+            </dd>
+            <dd class="underline-dashed py-2">          
+              <a href="">
+                Chính Sách Bảo Mật
+              </a>  
+            </dd>          
+          </dl>
+        </aside>
+        <aside class="col-md-4 text-white">
+          <p class='size-18-16 mb-3'>
+            <b>KẾT NỐI VỚI CHÚNG TÔI</b>
+          </p>
+          <a href="https://www.facebook.com/shomenoithatthandong">
+            <img src="images/fbthandong.png" alt="" class="w-100">
+          </a>
+        </aside>
+      </main>
+    </div>
+    <p class="w-100 text-light text-center mb-0 py-3 bg-theme mt-4">        
+      Copyright © 2021 noithatthandong. All rights reserved. Designed By Fagogroup
+    </p>
+  </footer>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="js/owl.js"></script>
+  <script src="js/clickVisible.js"></script>
+  <script src="js/switch.js"></script>
+  <script src="js/windowScroll.js"></script>
+  <script src="js/animationOnScroll.js"></script>
+  <script src="js/OpenFullScreen.js"></script>
+  <script src="js/smallToBig.js"></script>
+  <script src="js/galleryfunction.js"></script>
+</body>
+
+</html>
